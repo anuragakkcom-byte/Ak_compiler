@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Modern Code Compiler</title>
+  <link rel="stylesheet" href="about.css">
+  <style>
+  	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0a0a1a, #000);
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background:yellow;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  padding: 150px 80px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+}
+
+.title {
+  text-align: center;
+  color: #00ffff;
+  font-size: 2.5rem;
+  text-shadow: 0 0 20px #00ffff;
+}
+
+.subtitle {
+  text-align: center;
+  color: #bbb;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* ===== CONTENT ===== */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h3 {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-text ul li {
+  margin-bottom: 10px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.about-text ul li:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* ===== IMAGE ===== */
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px #00ffff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: aqua;
+  color:black ;
+font-weight: bold;
+}
+.r{
+font-size:30px;
+ }
+  </style>
+
+</head>
+<body>
+  <div class="r">
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <h1 class="logo">💻 Modern Compiler</h1>
+    <nav>
+      <a href="ak.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="service.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about-section">
+    <div class="about-container">
+      <h2 class="title">👨‍💻 About Modern Compiler</h2>
+      <p class="subtitle">
+        Empowering developers with next-generation tools for faster, smarter, and more secure coding.
+      </p>
+
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Our Mission</h3>
+          <p>
+            Modern Compiler is built to simplify coding for developers of all levels. Whether you’re learning to code or building complex systems, our online compiler provides a lightning-fast, intelligent, and secure environment for real-time development.
+          </p>
+
+          <h3>Why Choose Us?</h3>
+          <ul>
+            <li>⚡ Fast and reliable code execution</li>
+            <li>🤖 AI-powered code assistance and error detection</li>
+            <li>🌈 Sleek, modern UI with real-time collaboration</li>
+            <li>☁️ Cloud-based storage and project sync</li>
+          </ul>
+        </div>
+
+        <div class="about-image">
+          <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*0us2-4R5S1Oy6ccfJOCjcA.png" alt="Developer Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Modern Compiler | Built with 💙 by Anurag bhai technical-student</p>
+  </footer>
+</div>
+  <script>
+  	// Simple fade-in animation for the about section
+const aboutContainer = document.querySelector('.about-container');
+aboutContainer.style.opacity = 0;
+aboutContainer.style.transform = 'translateY(50px)';
+aboutContainer.style.transition = 'all 0.8s ease-out';
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    aboutContainer.style.opacity = 1;
+    aboutContainer.style.transform = 'translateY(0)';
+  }, 300);
+});
+
+  </script>
+</body>
+</html>

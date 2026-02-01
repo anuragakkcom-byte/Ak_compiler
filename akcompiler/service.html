@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Modern Code Compiler</title>
+  <link rel="stylesheet" href="services.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0a0a1a, #000);
+  color: white;
+  min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: yellow;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+/* ===== SERVICES SECTION ===== */
+.services-section {
+  padding: 150px 80px 80px;
+  text-align: center;
+}
+
+.title {
+  color: #00ffff;
+  font-size: 2.5rem;
+  text-shadow: 0 0 20px #00ffff;
+}
+
+.subtitle {
+  color: #bbb;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* ===== SERVICE CARDS ===== */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition: 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,255,255,0.2), transparent 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.card:hover::before {
+  transform: scale(1);
+}
+
+.card:hover {
+  box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff;
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 20px #00ffff;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  background:aqua;
+  color: black;
+
+  font-weight: bold;
+  
+}
+.f{
+  font-size:30px;
+}  </style>
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <div class="f">
+  <header class="navbar">
+    <h1 class="logo">💻 Modern Compiler</h1>
+    <nav>
+      <a href="ak.html">Home</a>
+      <a href="service.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN SECTION ===== -->
+  <section class="services-section">
+    <h2 class="title">⚙️ Our Services</h2>
+    <p class="subtitle">Smart tools for developers — built to speed up your workflow.</p>
+
+    <div class="service-cards">
+      <div class="card">
+        <div class="icon">🧠</div>
+        <h3>AI Code Assistance</h3>
+        <p>Get intelligent code suggestions, bug fixes, and optimizations using AI-powered tools.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>Online Compiler</h3>
+        <p>Run your code instantly in multiple languages right from your browser — no setup needed.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔒</div>
+        <h3>Secure Sandbox</h3>
+        <p>Your code runs in an isolated, secure environment — safe and private.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h3>Cloud Integration</h3>
+        <p>Save, sync, and share your code projects anywhere with seamless cloud access.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Modern Compiler | Built with ⚡ by Akbhai.technical-student</p>
+  </footer>
+</div>
+  <script>
+    // Simple animation: cards fade in when scrolled into view
+const cards = document.querySelectorAll('.card');
+
+const revealCards = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+  cards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    if (cardTop < triggerBottom) {
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    }
+  });
+};
+
+window.addEventListener('scroll', revealCards);
+window.addEventListener('load', () => {
+  cards.forEach(card => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(50px)";
+    card.style.transition = "all 0.8s ease";
+  });
+  revealCards();
+});
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Modern Code Compiler</title>
+  <link rel="stylesheet" href="project.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0a0a1a, #000);
+  color: white;
+  min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: yellow;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+/* ===== PROJECT SECTION ===== */
+.projects-section {
+  padding: 150px 60px 80px;
+  text-align: center;
+}
+
+.title {
+  color: #00ffff;
+  font-size: 2.5rem;
+  text-shadow: 0 0 20px #00ffff;
+}
+
+.subtitle {
+  color: #bbb;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* ===== PROJECT GRID ===== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+/* ===== PROJECT CARD ===== */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.project-content p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #00ffff;
+  border-radius: 30px;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: aqua;
+  color:black;
+  font-size: 30px;
+}
+.navbar{
+  font-size: 30px;
+}
+.s{
+  font-size: 30px;
+  </style>
+}
+
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <h1 class="logo">💻 Modern Compiler</h1>
+    <nav>
+      <a href="ak.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="project.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+<div class="s">
+  <!-- ===== PROJECT SECTION ===== -->
+  <section class="projects-section">
+    <h2 class="title">🚀 Our Featured Projects</h2>
+    <p class="subtitle">Explore our cutting-edge compiler tools and innovative coding solutions.</p>
+
+    <div class="project-grid">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="https://cdn.pixabay.com/photo/2018/05/08/08/33/computer-3385072_1280.jpg" alt="Online Compiler">
+        <div class="project-content">
+          <h3>Online Code Compiler</h3>
+          <p>Run and debug code instantly in 10+ languages using our lightning-fast web compiler.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="https://cdn.pixabay.com/photo/2017/12/29/11/53/artificial-intelligence-3041247_1280.jpg" alt="AI Assistant">
+        <div class="project-content">
+          <h3>AI Code Assistant</h3>
+          <p>Intelligent real-time code completion, syntax help, and bug detection powered by AI.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <img src="https://cdn.pixabay.com/photo/2017/06/27/08/53/computer-2444658_1280.jpg" alt="Rasanmart">
+        <div class="project-content">
+          <h3>Rasanmart</h3>
+          <p>Collaborate with your team and build apps in the cloud without any installation.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div>
+      </div>
+
+      <!-- Project Card 4 -->
+     
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Modern Compiler | Built with ⚡ by Akbhai.technical-student.</p>
+  </footer>
+
+  <script>
+    // Fade-in animation for project cards on scroll
+const cards = document.querySelectorAll('.project-card');
+
+const showCards = () => {
+  const trigger = window.innerHeight * 0.85;
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if (top < trigger) {
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    }
+  });
+};
+
+window.addEventListener('scroll', showCards);
+window.addEventListener('load', () => {
+  cards.forEach(card => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(40px)";
+    card.style.transition = "all 0.8s ease";
+  });
+  showCards();
+});
+
+  </script>
+</body>
+</html>
